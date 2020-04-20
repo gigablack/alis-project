@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "alis-project",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "App for manage a pediatric office",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -11,14 +11,37 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@blueprintjs/core": "^3.25.0",
+    "@reach/dialog": "^0.10.0",
+    "@reach/tabs": "^0.10.0",
+    "@reach/visually-hidden": "^0.10.0",
+    "apollo-boost": "^0.4.7",
     "gatsby": "^2.20.12",
+    "gatsby-plugin-create-client-paths": "^2.2.1",
+    "gatsby-plugin-netlify-identity": "0.0.3",
+    "gatsby-plugin-sass": "^2.2.2",
+    "gatsby-source-graphql": "^2.4.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.12.0",
+    "react-netlify-identity-widget": "^0.2.7",
+    "react-particles-js": "^3.1.0",
+    "react-spring": "^8.0.27"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "prettier": "^1.19.1"
   },
   "repository": {

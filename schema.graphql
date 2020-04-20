@@ -1,0 +1,44 @@
+type Child {
+    name: String!
+    lastname: String!
+    parent: Parent! @relation
+    parentDNI: String!
+    birth: Date!
+    sex: String!
+    records: [Record] @relation
+    doctor: Doctor! @relation
+}
+
+type Parent {
+    name: String!
+    lastname: String!
+    age: Int!
+    dni: Int!
+    children: [Child!]! @relation
+}
+
+type Doctor {
+    name: String
+    lastname: String
+    children: [Child] @relation
+    sex: String
+    identity: String!
+}
+
+type Record {
+    age: Int!
+    weight: Float!
+    headCircumference: Float
+    height: Float!
+    child: Child! @relation
+}
+
+type Query {
+    allChildren: [Child]
+    allParents: [Parent]
+    allDoctors: [Doctor]
+    allRecords: [Record]
+    findDoctorByName(name: String!): [Doctor] @index(name: "find_doctor_by_name")
+    findDoctorByLastname(lastname: String!): [Doctor] @index(name: "find_doctor_by_lastname")
+    findDoctorByIdentity(identity: String!): Doctor @index(name: "find_doctor_by_identity")
+}

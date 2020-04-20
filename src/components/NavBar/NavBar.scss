@@ -1,0 +1,7 @@
+.nav {
+    margin: 0 auto;
+    width: 80vw;
+    @media (max-width: 415px){
+        width: 100%;
+    }
+}
