@@ -13,7 +13,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall": "netlify-lambda install"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
@@ -33,7 +34,8 @@
     "react-dom": "^16.12.0",
     "react-netlify-identity-widget": "^0.2.7",
     "react-particles-js": "^3.1.0",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "netlify-lambda": "^1.6.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
