@@ -1,0 +1,17 @@
+@import '../../../../styles/global.scss';
+.container {
+    h1 {
+        font-family: $emilys;
+        color: $primary;
+        text-align: center;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        a {
+            align-self: center;
+            text-decoration: none;
+            margin-left: 10vw;
+        }
+    }
+}

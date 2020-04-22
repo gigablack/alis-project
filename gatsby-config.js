@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
-      resolve: `gatsby-plugin-sass`
+      resolve: `gatsby-plugin-sass`,
     },
     {
       resolve: `gatsby-plugin-create-client-paths`,
@@ -19,6 +19,6 @@ module.exports = {
       options: {
         url: "https://alis-project.netlify.app",
       },
-    }
+    },
   ],
 }
