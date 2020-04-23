@@ -5,6 +5,7 @@ import "./ChildListItem.module.scss"
 import { Icon, Intent } from "@blueprintjs/core"
 import { IconNames } from "@blueprintjs/icons"
 
+
 const ChildListItem = ({ name, sex }) => {
   return (
     <Card
