@@ -11,9 +11,9 @@ const HomePage = () => {
   useEffect(() => {
     if (isLoggedIn) navigate("/app/patients")
   }, [isLoggedIn])
-  return isLoggedIn ? null : (
+  return (
     <Layout>
-      <section className="container">
+       {!isLoggedIn && (<section className="container">
         <CardLogin />
         <Particles
           params={{
@@ -52,7 +52,7 @@ const HomePage = () => {
             },
           }}
         />
-      </section>
+      </section>)}
     </Layout>
   )
 }
