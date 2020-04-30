@@ -12,10 +12,14 @@ const NavBar = () => {
   const [showToast,setShowToast] = useState(false)
   const [openMenu,setOpenMenu] = useState(false)
   const handleConfirmLogout = async () => {
-    setOpenLogout(false)
-    setShowToast(true)
-    await user.logoutUser()
-    setShowToast(false)
+    try {
+      setOpenLogout(false)
+      setShowToast(true)
+      await user.logoutUser()
+      setShowToast(false)
+    } catch (error) {
+      window.location.replace('/')
+    }
   }
   return (
     <nav className="bp3-navbar bp3-dark">
