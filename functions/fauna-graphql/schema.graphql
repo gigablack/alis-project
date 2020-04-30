@@ -22,7 +22,7 @@ type Doctor {
     lastname: String
     children: [Child] @relation
     sex: String
-    identity: String!
+    identity: String! @unique(index: "unique_doctor_identity")
 }
 
 type Record {

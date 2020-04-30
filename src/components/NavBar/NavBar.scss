@@ -5,3 +5,15 @@
         width: 100%;
     }
 }
+
+.big-menu {
+    @media (max-width: 530px){
+        display: none;
+    }
+}
+
+.small-menu {
+    @media (min-width: 531px){
+        display: none;
+    }
+}

@@ -1,12 +1,14 @@
 import React, { useState } from "react"
 import { Card, Elevation, Button } from "@blueprintjs/core"
 import { container } from "./CardLogin.module.scss"
-import { IdentityModal } from "react-netlify-identity-widget"
+import { IdentityModal,useIdentityContext } from "react-netlify-identity-widget"
 import "react-netlify-identity-widget/styles.css"
+import "@reach/tabs/styles.css";
 import { navigate } from "gatsby"
 
 const CardLogin = () => {
   const [dialog, setDialog] = useState(false)
+  const { user } = useIdentityContext()
   const handleLogin = () => {
     navigate("/app/patients")
   }

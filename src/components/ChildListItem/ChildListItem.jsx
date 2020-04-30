@@ -12,7 +12,7 @@ const ChildListItem = ({ name, sex }) => {
       interactive={true}
       elevation={Elevation.TWO}
       style={{
-        marginTop: "5vh",
+        marginTop: "2vh",
         justifyContent: "space-between",
         alignItems: "center",
       }}
